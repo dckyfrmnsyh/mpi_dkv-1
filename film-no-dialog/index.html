@@ -77,7 +77,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
 
   .bg {
     position: absolute; inset: 0;
-    background: #FAF8F5 url('./asset/img/bg2.png') center/cover no-repeat;
+    background: #FAF8F5 url('./film-no-dialog/asset/img/bg2.png') center/cover no-repeat;
     z-index: 0;
     pointer-events: none;
   }
@@ -90,7 +90,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
   #scr-bermain .bg,
   #scr-berlatih .bg,
   #scr-fokus .bg {
-    background-image: url('./asset/img/bg2.png');
+    background-image: url('./film-no-dialog/asset/img/bg2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
     position: relative; z-index: 5; height: 80px; flex: 0 0 80px;
     display: flex; align-items: center; gap: 14px; padding: 0 30px;
     background-color: #FFFFFF;
-    background-image: url('./asset/img/bg3.png');
+    background-image: url('./film-no-dialog/asset/img/bg3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -165,13 +165,13 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
     border-radius: 0 0 40px 40px; box-shadow: var(--bayang-kecil);
   }
   #scr-menu .topbar {
-    background-image: url('./asset/img/bg3.png');
+    background-image: url('./film-no-dialog/asset/img/bg3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   #scr-belajar .topbar, #scr-bermain .topbar, #scr-berlatih .topbar, #scr-fokus .topbar {
-    background-image: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('./asset/img/bg3.png');
+    background-image: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('./film-no-dialog/asset/img/bg3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
     box-shadow: 0 -8px 20px rgba(0,0,0,0.03);
   }
   #scr-belajar .navbar, #scr-bermain .navbar, #scr-berlatih .navbar {
-    background-image: url('./asset/img/bg4.png');
+    background-image: url('./film-no-dialog/asset/img/bg4.png');
     background-size: cover; background-position: center; background-repeat: no-repeat;
   }
   .nav-btn {
@@ -234,7 +234,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
      LAYAR 1: JUDUL & MODAL
      ============================================================== */
   #scr-judul .bg {
-    background: url('./asset/img/bg_judul.jpg') center/cover no-repeat;
+    background: url('./film-no-dialog/asset/img/bg_judul.jpg') center/cover no-repeat;
   }
   #scr-judul .bg::after {
     content: ''; position: absolute; inset: 0;
@@ -749,13 +749,13 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 1: LAYAR JUDUL
          ========================================== -->
     <section id="scr-judul" class="screen active">
-      <div class="bg"><img src="./asset/img/bg_judul.jpg" alt="Latar Judul" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg_judul.jpg" alt="Latar Judul" onerror="imgErr(this)"></div>
       <div class="judul-topright">
         <button class="icon-btn" onclick="openModal('modal-info')" title="Informasi Kurikulum">i</button>
         <button class="icon-btn" onclick="openModal('modal-dev')" title="Profil Pengembang">★</button>
       </div>
       <div class="judul-center">
-        <img class="logo-sekolah" src="./asset/img/logo_sekolah.png" alt="Logo Sekolah" onerror="imgErr(this)">
+        <img class="logo-sekolah" src="./film-no-dialog/asset/img/logo_sekolah.png" alt="Logo Sekolah" onerror="imgErr(this)">
         <h1 class="judul-utama" id="txt-judul">Pembuatan Videografi</h1>
         <p class="judul-sub" id="txt-subjudul">Film Pendek Tanpa Dialog</p>
         <button class="b3d merah" style="font-size: 26px; padding: 16px 54px; border-radius: 99px;" onclick="openModal('modal-login')">
@@ -768,7 +768,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 2: MENU UTAMA
          ========================================== -->
     <section id="scr-menu" class="screen">
-      <div class="bg"><img src="./asset/img/bg2.png" alt="Latar Menu" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg2.png" alt="Latar Menu" onerror="imgErr(this)"></div>
       <div class="topbar">
         <div class="judul-bar">
           <span id="cfg-judul-menu">Pembuatan Videografi</span>
@@ -783,17 +783,17 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
       </div>
       <div class="menu-cards">
         <button class="menu-card mc-belajar" onclick="startBelajar()">
-          <img class="img-ikon" src="./asset/img/menu_belajar.png" alt="Belajar" onerror="imgErr(this)">
+          <img class="img-ikon" src="./film-no-dialog/asset/img/menu_belajar.png" alt="Belajar" onerror="imgErr(this)">
           <div class="mc-judul">Belajar</div>
           <div class="mc-sub">10 Materi Pembelajaran</div>
         </button>
         <button class="menu-card mc-bermain" onclick="startBermain()">
-          <img class="img-ikon" src="./asset/img/menu_bermain.png" alt="Bermain" onerror="imgErr(this)">
+          <img class="img-ikon" src="./film-no-dialog/asset/img/menu_bermain.png" alt="Bermain" onerror="imgErr(this)">
           <div class="mc-judul">Bermain</div>
           <div class="mc-sub">10 Permainan Interaktif</div>
         </button>
         <button class="menu-card mc-berlatih" onclick="startBerlatih()">
-          <img class="img-ikon" src="./asset/img/menu_berlatih.png" alt="Berlatih" onerror="imgErr(this)">
+          <img class="img-ikon" src="./film-no-dialog/asset/img/menu_berlatih.png" alt="Berlatih" onerror="imgErr(this)">
           <div class="mc-judul">Berlatih</div>
           <div class="mc-sub">11 Soal Evaluasi</div>
         </button>
@@ -804,7 +804,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 3: MODUL BELAJAR (10 TOPIK)
          ========================================== -->
     <section id="scr-belajar" class="screen">
-      <div class="bg"><img src="./asset/img/bg2.png" alt="Latar Belajar" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg2.png" alt="Latar Belajar" onerror="imgErr(this)"></div>
       <div class="topbar">
         <div class="judul-bar">
           Belajar
@@ -822,7 +822,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
         <div class="belajar-frame" id="belajar-frame">
           <button class="btn-zoom" id="btn-zoom" onclick="toggleZoom()">🔍 Perbesar</button>
           <div class="belajar-img-sisi">
-            <img id="belajar-img" src="./asset/img/materi_1.jpg" alt="Materi" onerror="imgErr(this)">
+            <img id="belajar-img" src="./film-no-dialog/asset/img/materi_1.jpg" alt="Materi" onerror="imgErr(this)">
           </div>
           <div class="belajar-teks-sisi" id="belajar-teks-wrap">
             <!-- Konten diinjeksi via JavaScript -->
@@ -839,7 +839,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 4: MODUL BERMAIN (10 GAMES)
          ========================================== -->
     <section id="scr-bermain" class="screen">
-      <div class="bg"><img src="./asset/img/bg2.png" alt="Latar Bermain" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg2.png" alt="Latar Bermain" onerror="imgErr(this)"></div>
       <div class="topbar">
         <div class="judul-bar">
           Bermain
@@ -870,7 +870,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 5: MODUL BERLATIH (11 EVALUASI)
          ========================================== -->
     <section id="scr-berlatih" class="screen">
-      <div class="bg"><img src="./asset/img/bg2.png" alt="Latar Berlatih" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg2.png" alt="Latar Berlatih" onerror="imgErr(this)"></div>
       <div class="topbar">
         <div class="judul-bar">
           Berlatih
@@ -899,7 +899,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
          LAYAR 6: FOKUS MINIGAMES (3 LEVELS)
          ========================================== -->
     <section id="scr-fokus" class="screen">
-      <div class="bg"><img src="./asset/img/bg2.png" alt="Latar Fokus" onerror="imgErr(this)"></div>
+      <div class="bg"><img src="./film-no-dialog/asset/img/bg2.png" alt="Latar Fokus" onerror="imgErr(this)"></div>
       <div class="topbar">
         <div class="judul-bar">
           ⚡ Siapa Cepat dan Fokus
@@ -985,7 +985,7 @@ Simulasi Lab 1  : KOSONG -> Sub-halaman 4 disembunyikan; Materi 1 = 3 sub-halama
     <div class="modal-bg" id="modal-dev">
       <div class="modal-box" style="text-align: center; width: 500px;">
         <button class="icon-btn-small" style="position: absolute; top: 18px; right: 18px;" onclick="closeModal('modal-dev')">✕</button>
-        <img src="./asset/img/foto_profil.jpg" alt="Guru Pengembang" onerror="imgErr(this)" style="width: 140px; height: 180px; object-fit: cover; border-radius: 20px; box-shadow: var(--bayang-kecil); margin-bottom: 12px;">
+        <img src="./film-no-dialog/asset/img/foto_profil.jpg" alt="Guru Pengembang" onerror="imgErr(this)" style="width: 140px; height: 180px; object-fit: cover; border-radius: 20px; box-shadow: var(--bayang-kecil); margin-bottom: 12px;">
         <h2 id="dev-nama" style="margin: 0; color: var(--primary-tua);"></h2>
         <p id="dev-instansi" style="font-weight: 700; color: #666; margin: 4px 0 14px;"></p>
         <div style="background: var(--krem); border: 2px dashed var(--accent); padding: 8px 16px; border-radius: 99px; display: inline-block; font-weight: 800; color: var(--accent-tua);">
@@ -1292,12 +1292,12 @@ let timerList = [];
 let soundOn = true, globalVolume = 0.25;
 const AUDIO = {};
 function loadAudio(key, src){ try{ const a=new Audio(src); a.preload='auto'; AUDIO[key]=a; }catch(e){} }
-loadAudio('bgm','./asset/audio/bgm.mp3'); if(AUDIO['bgm']) AUDIO['bgm'].loop = true;
-loadAudio('klik','./asset/audio/sfx_klik.wav');
-loadAudio('benar','./asset/audio/sfx_benar.wav');
-loadAudio('salah','./asset/audio/sfx_salah.wav');
-loadAudio('transisi','./asset/audio/sfx_transisi.wav');
-loadAudio('bintang','./asset/audio/sfx_bintang.wav');
+loadAudio('bgm','./film-no-dialog/asset/audio/bgm.mp3'); if(AUDIO['bgm']) AUDIO['bgm'].loop = true;
+loadAudio('klik','./film-no-dialog/asset/audio/sfx_klik.wav');
+loadAudio('benar','./film-no-dialog/asset/audio/sfx_benar.wav');
+loadAudio('salah','./film-no-dialog/asset/audio/sfx_salah.wav');
+loadAudio('transisi','./film-no-dialog/asset/audio/sfx_transisi.wav');
+loadAudio('bintang','./film-no-dialog/asset/audio/sfx_bintang.wav');
 
 const AC = window.AudioContext ? new AudioContext() : null;
 function beep(tipe) {
@@ -1601,7 +1601,7 @@ function renderBelajar() {
   $("belajar-sub").textContent = `${idxBelajar + 1}. ${m.t}`;
   $("belajar-pfill").style.width = `${(idxBelajar + 1) * 10}%`;
   $("belajar-plabel").textContent = `${idxBelajar + 1}/10`;
-  $("belajar-img").src = `./asset/img/materi_${idxBelajar + 1}.jpg`;
+  $("belajar-img").src = `./film-no-dialog/asset/img/materi_${idxBelajar + 1}.jpg`;
   $("belajar-img").alt = m.t;
 
   $("belajar-prev").textContent = (idxBelajar === 0 && subpageBelajar === 0) ? "☰ Menu" : "◀ Sebelumnya";
@@ -1817,7 +1817,7 @@ function renderGameJodoh(box, data, isBerlatih = false) {
       <div class="jodoh-col" id="${colKananId}">
         ${pasanganKanan.map(id => `
           <div class="pair-item ${isDone ? 'ok locked' : ''}" data-id="${id}" data-side="kanan">
-            <img class="img-pair" src="./asset/img/${data.pre}_${id}.png" alt="${data.lb[id] || ''}" onerror="imgErr(this)">
+            <img class="img-pair" src="./film-no-dialog/asset/img/${data.pre}_${id}.png" alt="${data.lb[id] || ''}" onerror="imgErr(this)">
             <span>${data.lb[id] || ''}</span>
           </div>`).join("")}
       </div>
@@ -1963,7 +1963,7 @@ function renderGameKlik(box, data) {
   box.innerHTML = `<div class="klik-grid">
     ${data.ids.map(id => `
       <div class="klik-card ${isDone && id === data.a ? 'benar locked' : isDone ? 'locked' : ''}" data-id="${id}">
-        <img src="./asset/img/klik_${id}.png" alt="${data.lb[id] || ''}" onerror="imgErr(this)">
+        <img src="./film-no-dialog/asset/img/klik_${id}.png" alt="${data.lb[id] || ''}" onerror="imgErr(this)">
         <b>${data.lb[id] || ''}</b>
       </div>`).join("")}
   </div>`;
